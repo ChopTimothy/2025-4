@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="index.php" method="post">
+
+        <p>ФИО:<br><input name="fio" id="fio" type="text" placeholder="Введите ФИО"><br></p>
+    
+        <label></label>Телефон:<br>
+            <input name="tel" id="tel" placeholder="Введите ваш телефон">
+        </label><br>
+
+          <label>
+            Почта:<br>
+            <input name="email" id="email" type="email" placeholder="Введите вашу почту">
+          </label><br>
+    
+          <label>
+            Введите дату рождения:<br>
+            <input name="dat" id="dat" value="2000-01-01" type="date">
+          </label><br>
+    
+          Ваш пол:<br>
+          <label><input type="radio" checked="checked" name="pol" value="M"> мужской</label>
+          <label><input type="radio" name="pol" value="G">женский</label><br>
+
+        <label>
+            любимый язык программирования:<br>
+            <select id="zzz" name="zzz[]" multiple="multiple" required>
+                <option value="1" selected="selected">Pascal</option>
+                <option value="2" selected="selected">C</option>
+                <option value="3" selected="selected">C++</option>>
+                <option value="4" selected="selected">JavaScript</option>>
+                <option value="5" selected="selected">PHP</option>>
+                <option value="6" selected="selected">Python</option>>
+                <option value="7" selected="selected">Java</option>>
+                <option value="8" selected="selected">Haskel</option>>
+                <option value="9" selected="selected">Clojure</option>>
+                <option value="10" selected="selected">Prolog</option>>
+                <option value="11" selected="selected">Scala</option>>
+            </select>
+            </label><br>
+
+          <label>
+            Биография:<br>
+            <textarea name="bio" id="bio" placeholder="Текст"></textarea>
+          </label><br><br>
+
+          <label><input type="checkbox" checked="checked" name="contract_accepted" id="contract_accepted">
+            с контрактом ознакомлен (а)</label><br><br>
+            </div>
+        
+            <button type="submit" name="save" class="btn btn-primary">Сохранить</button>
+    </form>
+</body>
+</html>
